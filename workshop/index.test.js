@@ -20,3 +20,8 @@
 
 // testing filter
 
+test('filter should return an array', () => {
+  const actual = filter([1], () => {});
+  const expected = 1;
+  equal(actual.length, expected)
+})

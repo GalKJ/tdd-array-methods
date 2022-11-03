@@ -16,3 +16,6 @@
 
 // Testing filter()
 
+function filter(array, callback) {
+  return array;
+}
