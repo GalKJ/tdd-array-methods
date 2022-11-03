@@ -3,7 +3,11 @@
 // }
 
 function map(array, fn) {
-  const el = array[0];
-  const newEl = fn(el);
-  return [newEl];
+  const result = [];
+  for (const item of array) {
+    const newEl = fn(item);
+    result.push(newEl)
+  }
+  
+  return result;
 }
